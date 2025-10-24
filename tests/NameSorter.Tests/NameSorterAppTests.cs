@@ -60,8 +60,9 @@ public class NameSorterAppTests
 
         Assert.AreEqual(0, result);
         _console.Verify(console => console.WriteLine("Name One"), Times.Once);
+        var expectedOutputPath = Path.Combine("C:\\output", "sorted-names-list.txt");
         _fileSystem.Verify(fs => fs.WriteAllLines(
-                "C:\\output\\sorted-names-list.txt",
+                expectedOutputPath,
                 It.Is<IEnumerable<string>>(lines => lines != null)),
             Times.Once);
     }
