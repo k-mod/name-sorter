@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace NameSorter.App;
 
-internal sealed class NameRecord
+internal class NameRecord
 {
     private readonly string[] _givenNames;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace NameSorter.App;
 
-internal sealed class NameRecordComparer : IComparer<NameRecord>
+internal class NameRecordComparer : IComparer<NameRecord>
 {
     private static readonly StringComparer Comparer = StringComparer.OrdinalIgnoreCase;
 

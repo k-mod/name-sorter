@@ -4,7 +4,7 @@ using NameSorter.App.Abstractions;
 
 namespace NameSorter.App.Infrastructure;
 
-internal sealed class FileSystem : IFileSystem
+internal class FileSystem : IFileSystem
 {
     public bool FileExists(string path) => File.Exists(path);
 

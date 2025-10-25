@@ -6,7 +6,7 @@ using NameSorter.App.Abstractions;
 
 namespace NameSorter.App;
 
-public sealed class NameSortingService : INameSortingService
+internal sealed class NameSortingService : INameSortingService
 {
     private static readonly NameRecordComparer RecordComparer = new();
 

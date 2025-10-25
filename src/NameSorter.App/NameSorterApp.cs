@@ -6,7 +6,7 @@ using NameSorter.App.Abstractions;
 
 namespace NameSorter.App;
 
-internal sealed class NameSorterApp(INameSortingService sortingService, IFileSystem fileSystem, IConsoleWriter console) : IApp
+internal class NameSorterApp(INameSortingService sortingService, IFileSystem fileSystem, IConsoleWriter console) : IApp
 {
     private const string OutputFileName = "sorted-names-list.txt";
 
